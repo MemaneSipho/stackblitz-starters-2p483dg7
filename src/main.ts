@@ -1,6 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-
+import {RouterModule} from '@angular/router';
+import {Router} from '@angular/router';
+import routerConfig from './app/Routes';
+import {ProviderRouter} from '@angular/routers';
 @Component({
   selector: 'app-root',
   template: `
@@ -11,11 +14,13 @@ import { bootstrapApplication } from '@angular/platform-browser';
     <button (click)="counter.set(counter() - 1)">--</button>
     <span> Counter: {{ counter() }} </span>
     <button (click)="counter.set(counter() + 1)">++</button>
-  `,
+   ` 
+  ,
+
 })
 export class App {
   name = 'Angular';
   counter = signal(0);
 }
 
-bootstrapApplication(App);
+bootstrapApplication(App,{ providers : ProviderRouter(routerConfig)});
