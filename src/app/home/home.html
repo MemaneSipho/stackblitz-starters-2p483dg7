@@ -1,1 +1,391 @@
-<p><img scr ="/assets/profile.jpg "alt="profile ">pic</p>
+<div class="home-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg portfolio-nav">
+    <div class="container">
+
+      <!-- BRAND -->
+      <a class="navbar-brand brand" routerLink="/">
+        <span class="brand-symbol"></span>
+        SIPHO MEMANE<span></span>
+      </a>
+
+      <!-- MOBILE BUTTON -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#portfolioNav"
+        aria-controls="portfolioNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <!-- NAVIGATION -->
+      <div
+        class="collapse navbar-collapse"
+        id="portfolioNav">
+
+        <ul class="navbar-nav mx-auto gap-lg-4">
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/about"
+              routerLinkActive="active">
+              About
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/career"
+              routerLinkActive="active">
+              Career
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/contact"
+              routerLinkActive="active">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- PROFILE -->
+        <div class="nav-profile">
+
+          <div class="profile-ring">
+            <img
+              src="assets/profiles.jpg"
+              alt="Sipho profile picture">
+          </div>
+
+          <div class="profile-name">
+            <strong>Sipho Memane</strong>
+            <small>Developer</small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <main class="hero-section">
+
+    <div class="container">
+
+      <div class="row align-items-center min-vh-100 g-5">
+
+        <!-- LEFT -->
+        <div class="col-lg-7">
+
+          <div class="hero-content">
+
+            <span class="hero-label">
+              WELCOME TO MY PORTFOLIO
+            </span>
+
+            <h1>
+              Hi, I'm
+              <span>Sipho Memane</span>
+            </h1>
+
+            <h2>
+              Full-Stack Developer
+            </h2>
+
+            <p class="hero-description">
+              I design and build modern, responsive and
+              user-focused digital experiences using
+              technologies such as Angular, TypeScript,
+              JavaScript and Node.js.
+            </p>
+
+            <div class="hero-buttons">
+
+              <a
+                routerLink="/about"
+                class="btn btn-primary btn-lg">
+                Explore My Work
+                <span>→</span>
+              </a>
+
+              <a
+                routerLink="/career"
+                class="btn btn-outline-light btn-lg">
+                My Career
+              </a>
+
+            </div>
+
+            <!-- SOCIAL / SKILLS -->
+            <div class="quick-info">
+
+              <div>
+                <strong>Angular</strong>
+                <span>Frontend</span>
+              </div>
+
+              <div>
+                <strong>Node.js</strong>
+                <span>Backend</span>
+              </div>
+
+              <div>
+                <strong>Full-Stack</strong>
+                <span>Development</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- RIGHT -->
+        <div class="col-lg-5">
+
+          <div class="hero-profile">
+
+            <!-- DECORATIVE CIRCLES -->
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="profile-glow"></div>
+
+            <div class="hero-image-wrapper">
+
+              <img
+                src="assets/profiles.jpg"
+                alt="Sipho profile picture"
+                class="hero-image">
+
+            </div>
+
+            <!-- FLOATING CARD -->
+            <div class="floating-card card-top">
+
+              <span class="floating-icon">
+                &lt;/&gt;
+              </span>
+
+              <div>
+                <strong>Clean Code</strong>
+                <small>Modern Development</small>
+              </div>
+
+            </div>
+
+            <div class="floating-card card-bottom">
+
+              <span class="floating-icon">
+                ✓
+              </span>
+
+              <div>
+                <strong>Projects</strong>
+                <small>Built & Deployed</small>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- INTRO SECTION -->
+  <section class="intro-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span>01 — WHAT I DO</span>
+
+        <h2>
+          Turning ideas into
+          <span>digital solutions.</span>
+        </h2>
+
+        <p>
+          I enjoy transforming ideas and challenges into
+          functional, attractive and reliable applications.
+        </p>
+
+      </div>
+
+
+      <div class="row g-4 mt-4">
+
+        <div class="col-md-4">
+
+          <div class="service-card">
+
+            <div class="service-number">
+              01
+            </div>
+
+            <div class="service-icon">
+              &lt;/&gt;
+            </div>
+
+            <h3>Frontend</h3>
+
+            <p>
+              Building responsive interfaces with Angular,
+              TypeScript, HTML, CSS and Bootstrap.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+          <div class="service-card">
+
+            <div class="service-number">
+              02
+            </div>
+
+            <div class="service-icon">
+              API
+            </div>
+
+            <h3>Backend</h3>
+
+            <p>
+              Creating backend services and APIs using
+              Node.js and Express.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+          <div class="service-card">
+
+            <div class="service-number">
+              03
+            </div>
+
+            <div class="service-icon">
+              ↗
+            </div>
+
+            <h3>Deployment</h3>
+
+            <p>
+              Taking applications from development through
+              testing and deployment.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section
+    id="contact"
+    class="contact-section">
+
+    <div class="container">
+
+      <div class="contact-box">
+
+        <span>
+          LET'S CONNECT
+        </span>
+
+        <h2>
+          Have an idea?
+          <strong>Let's build it.</strong>
+        </h2>
+
+        <p>
+          I'm always interested in learning, building new
+          projects and creating meaningful digital experiences.
+        </p>
+
+        <a
+        routerLink="/contact"
+        routerLinkActive="active"
+          class="btn btn-primary btn-lg">
+          Get In Touch →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="portfolio-footer">
+
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <div class="col-md-6">
+          <div class="footer-brand">
+            SIPHO<span>.</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 text-md-end">
+          <p>
+            © 2026 Sipho Memane. Built with Angular.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</div>

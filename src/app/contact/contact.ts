@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
-  selector: 'app-home',
+  selector: 'app-contact',
   imports: [RouterLink, RouterLinkActive],
-  templateUrl: './home.html',
-  styleUrl: './home.css',
+  templateUrl: './contact.html',
+  styleUrl: './contact.css',
 })
-export class Home {
+export class Contact {
 
 }
